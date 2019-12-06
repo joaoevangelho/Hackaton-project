@@ -1,0 +1,12 @@
+{{>navbar}}
+
+<h2>List a new Project</h2>
+
+<form action="/projects/create" method="POST" >
+  <textarea name="name" maxlength="140" placeholder="Name of Project" required></textarea>
+  <textarea name="location" maxlength="140" placeholder="Location" required></textarea>
+  <textarea name="stage" maxlength="140" placeholder="Proposed, Building, Active" required></textarea>
+  <input name="squaremeter" class="form-control" type="number" placeholder="Square Meter of Greenary"  required >
+  {{!-- <input type="file" name="images" multiple /> --}}
+  <button class="btn">Publish</button>
+</form>
