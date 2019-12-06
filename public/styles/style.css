@@ -3,8 +3,6 @@ body {
   padding: 0;
   font-family: "Barlow", sans-serif;
   background-color: #f3f5f7; }
-<<<<<<< HEAD
-=======
 
 #sqm {
   color: #f3f5f7; }
@@ -17,7 +15,6 @@ body {
   align-items: center;
   padding: 20%;
   color: white; }
->>>>>>> 9f4a1b11189eacc2bace7f5e47a934f0bf155262
 
 #homepage-background {
   background-image: url("/images/Background_Picture.png");
@@ -25,10 +22,6 @@ body {
   background-repeat: no-repeat;
   height: 100vh; }
   #homepage-background .get-started {
-<<<<<<< HEAD
-    position: absolute;
-=======
->>>>>>> 9f4a1b11189eacc2bace7f5e47a934f0bf155262
     width: fit-content;
     height: fit-content;
     padding: 4px;
@@ -72,11 +65,7 @@ body {
     color: #00bd93; }
   #signup-background .signup-form input {
     color: #00bd93; }
-<<<<<<< HEAD
-  #signup-background .signup-form h1 {
-=======
   #signup-background .gettingStarted {
->>>>>>> 9f4a1b11189eacc2bace7f5e47a934f0bf155262
     font-family: "Barlow", sans-serif;
     font-style: normal;
     font-weight: 300;
