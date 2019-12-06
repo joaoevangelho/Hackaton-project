@@ -1,21 +1,40 @@
-const express = require('express');
+const express = require("express");
 
 const router = new express.Router();
 
-const Projects = require('../models/project');
-const City = require('./../models/city');
+const Projects = require("../models/project");
+const City = require("./../models/city");
 
-router.get('/form', (req, res, next) => {
-  res.render('form/index');
+router.get("/form", (req, res, next) => {
+  res.render("form/index");
 });
 
-router.get('/', (req, res, next) => {
+router.post("/form", (req, res, next) => {
+  // console.log(req.file);
+  const name = req.body.name;
+  const co2 = req.body.co2;
+  const squareMeter = co2 / 0.56 / 0.05;
+  console.log(name, co2, squareMeter);
+  City.create({
+    name,
+    co2,
+    squareMeter
+  })
+    .then(form => {
+      res.render("form/index", { form });
+    })
+    .catch(error => {
+      next(error);
+    });
+});
+
+router.get("/", (req, res, next) => {
   Projects.find()
     .sort({
       creationDate: -1
     })
     .then(projects => {
-      res.render('projects/list', {
+      res.render("projects/list", {
         projects
       });
     })
@@ -24,11 +43,11 @@ router.get('/', (req, res, next) => {
     });
 });
 
-router.get('/create', (req, res, next) => {
-  res.render('projects/create');
+router.get("/create", (req, res, next) => {
+  res.render("projects/create");
 });
 
-router.post('/create', (req, res, next) => {
+router.post("/create", (req, res, next) => {
   // console.log(req.file);
   const name = req.body.name;
   const location = req.body.location;
@@ -47,7 +66,7 @@ router.post('/create', (req, res, next) => {
     });
 });
 
-router.get('/list', (req, res, next) => {
+router.get("/list", (req, res, next) => {
   // res.render('projects/list');
   Projects.find()
     .sort({
@@ -55,7 +74,7 @@ router.get('/list', (req, res, next) => {
     })
     .then(projects => {
       console.log(projects);
-      res.render('projects/list', {
+      res.render("projects/list", {
         projects
       });
     })
