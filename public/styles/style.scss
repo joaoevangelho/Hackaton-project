@@ -71,7 +71,7 @@ body {
     color: #00bd93;
   }
 
-  .signup-form h1 {
+  .gettingStarted {
     font-family: $font-sans;
     font-style: normal;
     font-weight: 300;
@@ -114,6 +114,104 @@ body {
     background: #00bd93;
     border-radius: 11px;
     width: fit-content;
+    font-family: Barlow;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+
+    color: #ffffff;
+  }
+}
+
+#calculate-background {
+  background-image: url("/images/Background_Picture.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  // width: 100%;
+  height: 100vh;
+
+  .calculate-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: absolute;
+    border: 0px solid;
+    max-width: 100%;
+    width: 100%;
+    padding: 30px 40px;
+    margin-top: 3vh;
+    background: #ffffff;
+    box-shadow: 1px 0px 10px rgba(198, 198, 198, 0.13);
+    border-radius: 7px;
+  }
+
+  .calculate-form label {
+    font-family: $font-sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+    color: #00bd93;
+  }
+
+  .calculate-form input {
+    color: #00bd93;
+  }
+
+  .gettingStarted {
+    font-family: $font-sans;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 55px;
+    line-height: 66px;
+    text-align: center;
+
+    color: #00bd93;
+
+    // color: #93cfab;
+    // text-shadow: 2px 2px #2c342f;
+    // font-weight: 900;
+  }
+
+  .text-uppercase {
+    font-family: $font-sans;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 55px;
+    line-height: 66px;
+    text-align: center;
+
+    color: #00bd93;
+  }
+
+  .calculate-form a {
+    font-family: $font-sans;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    /* identical to box height */
+
+    text-decoration-line: underline;
+
+    color: #00bd93;
+  }
+
+  .calculate-form button {
+    background: #00bd93;
+    border-radius: 11px;
+    width: fit-content;
+    font-family: Barlow;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    float: none;
+
+    color: #ffffff;
   }
 }
 
