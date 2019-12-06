@@ -12,7 +12,7 @@ const projectSchema = new mongoose.Schema(
       type: mongoose.Types.ObjectId,
       ref: 'City'
     },
-    squareMeter: {
+    squaremeter: {
       type: Number
     },
     stage: {
