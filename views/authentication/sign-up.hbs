@@ -1,4 +1,4 @@
-<h1>sign up</h1>
+{{!-- <h1>sign up</h1>
 <form action="/authentication/sign-up" method="POST">
 
     <label for="input-email">Email</label>
@@ -7,4 +7,42 @@
     <input type="password" name="password" id="input-password" placeholder="A Strong Password" />
 
     <button>Sign Up</button>
-</form>
+</form> --}}
+
+<body id="signup-background">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-4 col-sm-4 col-xs-12"></div>
+            <div class="col-md-4 col-sm-4 col-xs-12">
+                <form class=" form-container signup-form text-center " action="/authentication/sign-up" method="POST">
+                    <h1 class="mb-5">getting Started</h1>
+                    <h1 class="mb-5 text-uppercase">SIGN UP</h1>
+                    <div class="form-group  -container">
+                        <div>
+                            <label for="input-email">Email</label>
+                            <br>
+                            <input type="email" id="input-email" name="email" placeholder="Your Email" />
+                        </div>
+                        <div>
+                            <label for="input-password">Password</label>
+                            <br>
+                            <input type="password" name="password" id="input-password"
+                                placeholder="A Strong Password" />
+                        </div>
+                    </div>
+
+                    <button type="submit" class="btn btn-custom btn-block">SIGN UP</button>
+
+                    <p class="mt-3 font-weight-strong "> <a href="/authentication/sign-in">Already have an account? </a>
+                    </p>
+
+                </form>
+            </div>
+            <div class="col-md-4 col-sm-4 col-xs-12"></div>
+
+        </div>
+    </div>
+
+    </div>
+
+</body>

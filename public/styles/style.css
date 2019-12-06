@@ -1,34 +1,100 @@
 body {
   margin: 0;
-  padding: 50px;
-  font-family: "Barlow", sans-serif;
-  background-color: #f3f5f7; }
-
-#sqm {
-  color: #f3f5f7; }
+  padding: 0;
+  font-family: 'Barlow', sans-serif;
+  background-color: #f3f5f7;
+}
 
 #homepage-background {
-  background-image: url("/images/Background_Picture.png");
+  background-image: url('/images/Background_Picture.png');
   background-size: cover;
   background-repeat: no-repeat;
-  height: 100vh; }
-  #homepage-background .get-started {
-    position: absolute;
-    width: fit-content;
-    height: fit-content;
-    padding: 4px;
-    left: 481px;
-    top: 561px;
-    background: #00bd93;
-    border-radius: 11px; }
-  #homepage-background .get-started a {
-    font-family: Barlow;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 18px;
-    line-height: 22px;
-    text-align: center;
-    color: #ffffff; }
+  height: 100vh;
+}
+#homepage-background .get-started {
+  position: absolute;
+  width: fit-content;
+  height: fit-content;
+  padding: 4px;
+  left: 481px;
+  top: 561px;
+  background: #00bd93;
+  border-radius: 11px;
+}
+#homepage-background .get-started a {
+  font-family: 'Barlow', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  color: #ffffff;
+}
+
+#signup-background {
+  background-image: url('/images/Background_Picture.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+#signup-background .signup-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: absolute;
+  border: 0px solid;
+  max-width: 100%;
+  width: 100%;
+  padding: 30px 40px;
+  margin-top: 3vh;
+  background: #ffffff;
+  box-shadow: 1px 0px 10px rgba(198, 198, 198, 0.13);
+  border-radius: 7px;
+}
+#signup-background .signup-form label {
+  font-family: 'Barlow', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22px;
+  color: #00bd93;
+}
+#signup-background .signup-form input {
+  color: #00bd93;
+}
+#signup-background .signup-form h1 {
+  font-family: 'Barlow', sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 55px;
+  line-height: 66px;
+  text-align: center;
+  color: #00bd93;
+}
+#signup-background .text-uppercase {
+  font-family: 'Barlow', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 55px;
+  line-height: 66px;
+  text-align: center;
+  color: #00bd93;
+}
+#signup-background .signup-form a {
+  font-family: 'Barlow', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  /* identical to box height */
+  text-decoration-line: underline;
+  color: #00bd93;
+}
+#signup-background .signup-form button {
+  background: #00bd93;
+  border-radius: 11px;
+  width: fit-content;
+}
 
 .card {
   margin-bottom: 10px; }
@@ -44,7 +110,7 @@ body {
   flex-direction: column;
   align-content: flex-end;
   margin-right: 50px;
-  background-image: url("./../images/map.png");
+  background-image: url('./../images/map.png');
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%; }
@@ -52,7 +118,14 @@ body {
 .navbar {
   list-style-type: none;
   text-decoration: none;
-  background-color: #00bd93; }
+  background-color: #00bd93;
+  width: 100%;
+  margin: auto;
+}
+
+.margin-nav {
+  margin-left: 750px;
+}
 
 .navbar a {
   color: white; }
