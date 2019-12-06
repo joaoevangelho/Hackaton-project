@@ -1,9 +1,37 @@
 body {
   margin: 0;
   padding: 50px;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background-color: #f3f5f7; }
 
 a {
   color: #00b7ff; }
+
+.card {
+  margin-bottom: 10px; }
+
+.view-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  width: 100%; }
+
+.greenbtn {
+  display: flex;
+  flex-direction: column;
+  align-content: flex-end;
+  margin-right: 50px;
+  background-image: url("./../images/map.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%; }
+
+.navbar {
+  list-style-type: none;
+  text-decoration: none;
+  background-color: #00bd93; }
+
+.navbar a {
+  color: white; }
 
 /*# sourceMappingURL=style.css.map */
