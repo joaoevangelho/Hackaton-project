@@ -1,12 +1,39 @@
 {{>navbar}}
 
-<h2>List a new Project</h2>
-
-<form action="/projects/create" method="POST" >
+<body id="signup-background">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-4 col-sm-4 col-xs-12"></div>
+            <div class="col-md-4 col-sm-4 col-xs-12">
+                <form class=" form-container signup-form text-center " action="/projects/create" method="POST">
+                    <h1 class="mb-5">List a new Project</h1>
+                    <div class="form-group  -container">
+                        <div>
   <textarea name="name" maxlength="140" placeholder="Name of Project" required></textarea>
+                            <br>
+                        </div>
+                        <div>
   <textarea name="location" maxlength="140" placeholder="Location" required></textarea>
+                            <br>
+                        </div>
+                        <div>
   <textarea name="stage" maxlength="140" placeholder="Proposed, Building, Active" required></textarea>
+                            <br>
+                        </div>
+                        <div>
   <input name="squaremeter" class="form-control" type="number" placeholder="Square Meter of Greenary"  required >
-  {{!-- <input type="file" name="images" multiple /> --}}
-  <button class="btn">Publish</button>
-</form>
+                            <br>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="btn btn-custom btn-block">Publish</button>
+                </form>
+            </div>
+            <div class="col-md-4 col-sm-4 col-xs-12"></div>
+
+        </div>
+    </div>
+
+    </div>
+
+</body>

@@ -37,7 +37,7 @@ body {
 }
 
 #signup-background {
-  background-image: url("/images/Background_Picture.png");
+  background-image: url('/images/Background_Picture.png');
   background-size: cover;
   background-repeat: no-repeat;
   // width: 100%;
@@ -153,4 +153,8 @@ body {
 
 .navbar a {
   color: white;
+}
+
+.btn-custom {
+  color: black;
 }
