@@ -1,29 +1,65 @@
 body {
   margin: 0;
   padding: 50px;
-  font-family: "Barlow", sans-serif; }
+  font-family: "Barlow", sans-serif;
+}
 
 #homepage-background {
   background-image: url("/images/Background_Picture.png");
   background-size: cover;
   background-repeat: no-repeat;
-  height: 100vh; }
-  #homepage-background .get-started {
-    position: absolute;
-    width: fit-content;
-    height: fit-content;
-    padding: 4px;
-    left: 481px;
-    top: 561px;
-    background: #00bd93;
-    border-radius: 11px; }
-  #homepage-background .get-started a {
-    font-family: Barlow;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 18px;
-    line-height: 22px;
-    text-align: center;
-    color: #ffffff; }
+  height: 100vh;
+}
+#homepage-background .get-started {
+  position: absolute;
+  width: fit-content;
+  height: fit-content;
+  padding: 4px;
+  left: 481px;
+  top: 561px;
+  background: #00bd93;
+  border-radius: 11px;
+}
+#homepage-background .get-started a {
+  font-family: Barlow;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.card {
+  margin-bottom: 10px;
+}
+
+.view-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  width: 100%;
+}
+
+.greenbtn {
+  display: flex;
+  flex-direction: column;
+  align-content: flex-end;
+  margin-right: 50px;
+  background-image: url("./../images/map.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+}
+
+.navbar {
+  list-style-type: none;
+  text-decoration: none;
+  background-color: #00bd93;
+}
+
+.navbar a {
+  color: white;
+}
 
 /*# sourceMappingURL=style.css.map */

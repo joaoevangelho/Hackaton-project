@@ -1,8 +1,17 @@
 {{>navbar}}
-<h1>Calculate how much vertical forest you nedd to offset your Co2 emission</h1>
+{{!-- <h1>Calculate how much vertical forest you nedd to offset your Co2 emission</h1>
 <input type="text" placeholder="City">
 <label for="CO2 emissions">How many tons of CO2 are being produced per year</label>
 <input type="number" placeholder="100,000">
 <br>
-<h2>This is the square meter of greenary you need to plant</h2>
+<h2 id = "result">This is the square meter of greenary you need to plant</h2> --}}
 
+<form action="/projects/form" method="POST" >    
+<label for="input-city">City Name</label>
+    <input type="text" id="input-city" name="name" placeholder="City" />
+    <label for="input-co2">C02 produced each year - kg</label>
+    <input type="number" name="co2" id="input-co2" placeholder="6000000" />
+    <button>Submit</button>
+</form>
+
+<p>{{form.squareMeter}}</p>
