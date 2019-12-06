@@ -1,14 +1,14 @@
-$font-sans: "Barlow", sans-serif;
+$font-sans: 'Barlow', sans-serif;
 
 body {
   margin: 0;
-  padding: 50px;
+  padding: 0;
   font-family: $font-sans;
   background-color: #f3f5f7;
 }
 
 #homepage-background {
-  background-image: url("/images/Background_Picture.png");
+  background-image: url('/images/Background_Picture.png');
   background-size: cover;
   background-repeat: no-repeat;
   // width: 100%;
@@ -52,7 +52,7 @@ body {
   flex-direction: column;
   align-content: flex-end;
   margin-right: 50px;
-  background-image: url("./../images/map.png");
+  background-image: url('./../images/map.png');
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
@@ -62,6 +62,12 @@ body {
   list-style-type: none;
   text-decoration: none;
   background-color: #00bd93;
+  width: 100%;
+  margin: auto;
+}
+
+.margin-nav {
+  margin-left: 750px;
 }
 
 .navbar a {
