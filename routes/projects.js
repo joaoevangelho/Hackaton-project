@@ -13,7 +13,7 @@ router.post("/form", (req, res, next) => {
   // console.log(req.file);
   const name = req.body.name;
   const co2 = req.body.co2;
-  const squareMeter = co2 / 0.56 / 0.05;
+  const squareMeter = co2 / 0.56 * 0.05;
   console.log(name, co2, squareMeter);
   City.create({
     name,
