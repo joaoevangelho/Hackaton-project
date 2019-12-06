@@ -1,5 +1,4 @@
-$font-sans: "Helvetica Neue", Helvetica, Arial, sans-serif;
-$link-color: #00b7ff;
+$font-sans: "Barlow", sans-serif;
 
 body {
   margin: 0;
@@ -7,6 +6,31 @@ body {
   font-family: $font-sans;
 }
 
-a {
-  color: $link-color;
+#homepage-background {
+  background-image: url("/images/Background_Picture.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  // width: 100%;
+  height: 100vh;
+
+  .get-started {
+    position: absolute;
+    width: fit-content;
+    height: fit-content;
+    padding: 4px;
+    left: 481px;
+    top: 561px;
+    background: #00bd93;
+    border-radius: 11px;
+  }
+
+  .get-started a {
+    font-family: Barlow;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    color: #ffffff;
+  }
 }

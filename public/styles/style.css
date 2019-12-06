@@ -1,9 +1,29 @@
 body {
   margin: 0;
   padding: 50px;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
+  font-family: "Barlow", sans-serif; }
 
-a {
-  color: #00b7ff; }
+#homepage-background {
+  background-image: url("/images/Background_Picture.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh; }
+  #homepage-background .get-started {
+    position: absolute;
+    width: fit-content;
+    height: fit-content;
+    padding: 4px;
+    left: 481px;
+    top: 561px;
+    background: #00bd93;
+    border-radius: 11px; }
+  #homepage-background .get-started a {
+    font-family: Barlow;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    color: #ffffff; }
 
 /*# sourceMappingURL=style.css.map */
