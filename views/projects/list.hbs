@@ -3,21 +3,20 @@
 <h1>Goal</h1>
 <h1>100,000 (overALL - SUM(PROJECTS))</h1>
 
-<button class="btn"><a href="/projects/create"><img src="/images/PlusSign.png" /></a></button>
-
-<div class="container">
-        <div class="row">
-          <div class="col-5" style="max-height: 90vh; overflow: scroll;">
-            <div class="list-group">
-              {{#each projects}}   
-{{>singleproject}}
-{{/each}}
-              
+<div class="view-list">
+  <div class="container">
+          <div class="row">
+            <div class="col" style="max-height: 90vh; overflow: scroll;">
+              <div class="list-group" >
+                {{#each projects}}   
+                {{>singleproject}}
+                {{/each}}
+              </div>
             </div>
           </div>
+    </div>
+      <button class="greenbtn btn col-6"><a href="/projects/create"><img src="/images/PlusSign.png" /></a></button>
+</div>
 
 
-{{!-- {{#each projects}}   
-{{>singleproject}}
-{{/each}} --}}
 
