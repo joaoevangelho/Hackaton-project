@@ -11,6 +11,16 @@ body {
   color:#f3f5f7;
 }
 
+.home{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  padding: 20%;
+  color: white;
+}
+
 #homepage-background {
   background-image: url('/images/Background_Picture.png');
   background-size: cover;
@@ -19,7 +29,6 @@ body {
   height: 100vh;
 
   .get-started {
-    position: absolute;
     width: fit-content;
     height: fit-content;
     padding: 4px;
