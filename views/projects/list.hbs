@@ -1,7 +1,8 @@
 {{>navbar}}
 
-<h1>Goal</h1>
-<h1>100,000 (overALL - SUM(PROJECTS))</h1>
+<h1>Lisbon</h1>
+<h2>Left to plant reach</h2>
+<h2 id = "number">286764</h2>
 
 <div class="view-list">
   <div class="container">
@@ -18,5 +19,31 @@
       <button class="greenbtn btn col-6"><a href="/projects/create"><img src="/images/PlusSign.png" /></a></button>
 </div>
 
+<div id = "sqm"> 
+  {{#each projects}}   
+  {{this.squaremeter}}
+  {{/each}}
+</div>
+
+<script>
+
+  const $total = document.getElementById("sqm").innerText
+  
+  const arr =($total.split(" "))
+
+  let count = 0
+
+  if(arr.length > 0){
+    for(let i = 0; i< arr.length; i++){
+    count += parseInt(arr[i])
+  }
+  }
+  
+
+  let changed = 286764 - count
+
+  document.getElementById("number").innerText = changed + " SQM"
+
+</script>
 
 
