@@ -1,8 +1,20 @@
 body {
   margin: 0;
-  padding: 50px;
+  padding: 0;
   font-family: "Barlow", sans-serif;
   background-color: #f3f5f7; }
+
+#sqm {
+  color: #f3f5f7; }
+
+.home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  padding: 20%;
+  color: white; }
 
 #homepage-background {
   background-image: url("/images/Background_Picture.png");
@@ -10,7 +22,6 @@ body {
   background-repeat: no-repeat;
   height: 100vh; }
   #homepage-background .get-started {
-    position: absolute;
     width: fit-content;
     height: fit-content;
     padding: 4px;
@@ -178,7 +189,12 @@ body {
 .navbar {
   list-style-type: none;
   text-decoration: none;
-  background-color: #00bd93; }
+  background-color: #00bd93;
+  width: 100%;
+  margin: auto; }
+
+.margin-nav {
+  margin-left: 750px; }
 
 .navbar a {
   color: white; }
